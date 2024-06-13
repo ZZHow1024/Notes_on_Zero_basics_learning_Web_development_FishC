@@ -3,29 +3,68 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="ZZHow,前端,HTML5,CSS3,Web开发">
+	<meta name="description" content="《零基础入门学习Web开发》案例">
+	<meta name="author" content="ZZHow">
 	<title>为网页添加样式</title>
+	<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+	<!-- 使用 style 标签调整样式 -->
 	<style type="text/css">
-		h1 {color: red;
-			text-align: center;}
+		h1 {
+			color: red;
+			text-align: center;
+		}
 		h2 {
 			color: black;
 			margin-left: 10%;
+			text-align: center;
 		}
-		p {color: blue;
+		p {
+			color: blue;
 			font-size: 32px;
+			text-align: center;
 		}
 		a {
 			color: yellow;
 			background: black;
+			margin-left: 20%;
 		}
 		body {
 			background-image: url("./background.jpg");
+			background-size: cover;
+		}
+	</style>
+	<!-- 当要打印时所有字体变成黑色 -->
+	<style media="print">
+		h1 {
+			color: black;
+		}
+		h2 {
+			color: black;
+		}
+		p {
+			color: black;
+		}
+		a {
+			color: black;
+		}
+	</style>
+	<!-- 当屏幕宽度在 300px 至 512px 时所有字体变成黑色 -->
+	<style media="screen and (min-width: 300px) and (max-width: 512px)">
+		h1 {
+			color: black;
+		}
+		h2 {
+			color: black;
+		}
+		p {
+			color: black;
 		}
 	</style>
 </head>
 <body>
 	<h1>望庐山瀑布</h1>
-	<h2>李白〔唐代〕</p>
+	<h2>李白〔唐代〕</h2>
 	<p>日照香炉生紫烟，遥看瀑布挂前川。<br>
 	   飞流直下三千尺，疑是银河落九天。</p>
 	<a href="https://zzhow.com" target="_blank">ZZHow主站</a>
