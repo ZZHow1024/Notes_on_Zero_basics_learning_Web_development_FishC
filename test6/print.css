@@ -1,0 +1,13 @@
+/*当要打印时所有字体变成黑色*/
+h1 {
+	color: black;
+}
+h2 {
+	color: black;
+}
+p {
+	color: black;
+}
+a {
+	color: black;
+}

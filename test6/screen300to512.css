@@ -1,0 +1,10 @@
+/*当屏幕宽度在 300px 至 512px 时所有字体变成黑色*/
+h1 {
+	color: black;
+}
+h2 {
+	color: black;
+}
+p {
+	color: black;
+}
