@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ZZHow,前端,HTML5,CSS3,Web开发">
+    <meta name="description" content="《零基础入门学习Web开发》案例">
+    <meta name="author" content="ZZHow">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <title>ul、ol、列表嵌套和定义列表</title>
+    <style>
+        /*通过 list-style-type 设置列表的标志*/
+        ul.a {list-style-type: square;}
+        ul.b {list-style-type: circle;}
+        ul.c {list-style-type: disc;}
+        ul.d {list-style-type: hiragana-iroha;}
+        ul.e {list-style-image: url("../img/Apple-Logo.png");}
+    </style>
+</head>
+<body>
+    <!-- 使用 ul 元素创建一个无序列表-->
+    <h1>使用 ul 元素创建的无序列表</h1>
+    <ul>
+        <li>AAA</li>
+        <li>BBB</li>
+        <li>CCC</li>
+    </ul>
+
+    <!-- 使用 ol 元素创建一个有序列表-->
+    <h1>使用 ul 元素创建的有序列表</h1>
+    <ol type="I" reversed start="10">
+        <li>HTML5 & CSS3</li>
+        <li>JavaScrip</li>
+        <li>JQuery</li>
+        <li>BootStrap</li>
+        <li>Vue</li>
+        <li>PHP</li>
+    </ol>
+
+    <!-- 使用 CSS 来设置下方无序列表的样式 -->
+    <h1>使用 CSS 来设置下方无序列表的样式</h1>
+    <ul class="a">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScrip</li>
+    </ul>
+    <ul class="b">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScrip</li>
+    </ul>
+    <ul class="c">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScrip</li>
+    </ul>
+    <ul class="d">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScrip</li>
+    </ul>
+    <ul class="e">
+        <li>Watch</li>
+        <li>TV</li>
+        <li>Vision Pro</li>
+    </ul>
+
+    <!-- 列表嵌套 -->
+    <h1>列表嵌套</h1>
+    <ul>
+        <li>
+            你好
+            <ul>
+                <li>Hello</li>
+                <li>こんにちは</li>
+                <li>Привет</li>
+            </ul>
+        </li>
+        <li>
+            再见
+            <ul>
+                <li>goodbye</li>
+                <li>さようなら</li>
+                <li>до свидания</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- 定义列表 -->
+    <h1>定义列表</h1>
+    <dl>
+        <dt>术语</dt>
+        <dd>描述</dd>
+    </dl>
+
+    <dl>
+        <dt>第一个术语</dt>
+        <dt>第二个术语</dt>
+        <dd>描述</dd>
+    </dl>
+
+    <dl>
+        <dt>术语</dt>
+        <dd>第一个描述</dd>
+        <dd>第二个描述</dd>
+    </dl>
+
+    <dl>
+        <dt>第一个术语</dt>
+        <dd>第一个描述</dd>
+        <dd>第二个描述</dd>
+        <dt>第二个术语</dt>
+        <dd>第三个描述</dd>
+    </dl>
+</body>
+</html>
