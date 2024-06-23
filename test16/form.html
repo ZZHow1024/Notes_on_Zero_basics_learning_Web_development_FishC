@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ZZHow,前端,HTML5,CSS3,Web开发">
+    <meta name="description" content="《零基础入门学习Web开发》案例">
+    <meta name="author" content="ZZHow">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <title>form、粗讲input和button元素、XAMPP</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 80px;
+            text-align: left;
+        }
+        span {
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p><strong><span>注意⚠</span>️：本页面仅供<span>演示</span>，ZZHow<span>不会</span>收集您填写的表单，但也建议<span>不要</span>输入真实信息！</strong></p>
+    <!-- 表单 -->
+    <h1>一个最简单的表单（使用 GET 方法提交）</h1>
+    <form action="welcome_get.php" method="get">
+        <div>名字：</div>
+        <label><input type="text" name="name"></label><br><br>
+        <div>邮箱：</div>
+        <label><input type="text" name="email"></label><br><br>
+        <button type="submit">使用 GET 方法提交</button>
+    </form><br><br>
+
+    <h1>用户名密码表单（使用 POST 方法提交）</h1>
+    <form action="welcome_post.php" method="post">
+        <div>用户名：</div>
+        <label><input type="text" name="username"></label><br><br>
+        <div>密码：</div>
+        <label><input type="password" name="password"></label><br><br>
+        <button type="submit">使用 POST 方法提交</button>
+    </form>
+
+    <h1>模拟用户登陆</h1>
+    <form action="login.php">
+        <div>用户名：</div>
+        <label><input type="text" name="username"></label><br><br>
+        <div>密码：</div>
+        <label><input type="password" name="password"></label><br><br>
+        <button type="submit" formmethod="get">使用 GET 方法提交</button>
+        <button type="reset">重新填写</button>
+        <button type="submit" formmethod="post">使用 POST 方法提交</button>
+    </form>
+</body>
+</html>
