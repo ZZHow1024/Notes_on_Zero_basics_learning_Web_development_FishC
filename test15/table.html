@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ZZHow,前端,HTML5,CSS3,Web开发">
+    <meta name="description" content="《零基础入门学习Web开发》案例">
+    <meta name="author" content="ZZHow">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <title>表格背景色、thead、tbody、tfoot、col和colgroup元素及colspan和rowspan属性</title>
+    <style>
+        /*使用 border 属性给表格加边框*/
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+        caption {
+            padding: 10px;
+        }
+
+        /* 将 thead 元素中的 th 元素的背景颜色设置为 grey */
+        thead th {
+            background-color: gray;
+            color: white;
+        }
+        /* 将 tbody 元素中的 th 元素的背景颜色设置为 lightgrey */
+        tbody th {
+            background-color: lightgray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!-- 一个简单的表格 -->
+<h1>一个简单的表格</h1>
+<table>
+    <caption>A simple table</caption>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Say something</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>ZZHow</th>
+            <td>?</td>
+            <td>Hello world!</td>
+        </tr>
+        <tr>
+            <th>Tim</th>
+            <td>63</td>
+            <td>It's something only Apple can do!</td>
+        </tr>
+    </tbody>
+
+    <!-- 补充 tfoot 元素 -->
+    <tfoot>
+        <tr>
+            <td colspan="3">表格仅供娱乐</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!-- 让中间列纵跨 3 行的表格 -->
+<h1>让中间列纵跨 3 行的表格</h1>
+<table>
+    <tr>
+        <td>1</td>
+        <td rowspan="3">2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>9</td>
+    </tr>
+</table>
+
+<!-- 将第 1 列的背景颜色设置为红色 -->
+<!-- 将第 2、3、4 列的背景颜色设置为黄色 -->
+<!-- 将第 5 列的背景颜色设置为绿色 -->
+<h1>5 * 5 的矩阵</h1>
+<table>
+    <colgroup>
+        <col style="background-color: red">
+        <col span="3" style="background-color: yellow">
+        <col style="background-color: green">
+    </colgroup>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+</table>
+</body>
+</html>
