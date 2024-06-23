@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ZZHow,前端,HTML5,CSS3,Web开发">
+    <meta name="description" content="《零基础入门学习Web开发》案例">
+    <meta name="author" content="ZZHow">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <title>autocomplete、targe、value、autofocus、disabled和readonly属性</title>
+    <style>
+        div {
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>这是一个简单的表单</h1>
+    <form action="welcome.php" target="_blank">
+        <label><input type="text" name="username"></label>
+        <div> &lt- 带有自动填充功能</div><br><br>
+        <label><input type="text" name="username" autocomplete="off"></label>
+        <div> &lt- 没有自动填充功能</div><br><br>
+        <label><input type="text" name="username" value="admin"></label>
+        <div> &lt- 带有默认值</div><br><br>
+        <label><input type="text" name="username" value="<-你的光标" autofocus></label>
+        <div> &lt- 带有自动聚焦功能</div><br><br>
+        <label><input type="text" name="username" value="我被石化了" disabled></label>
+        <div> &lt- 被禁用的输入框</div><br><br>
+        <label><input type="text" name="username" value="不让你改喔" readonly></label>
+        <div> &lt- 只读的输入框</div><br><br>
+        <button type="submit" formmethod="get">使用 GET 方法提交</button><br><br>
+        <button type="submit" formmethod="post">使用 POST 方法提交</button><br><br>
+        <button type="reset">重置所有文本框</button><br><br>
+        <button type="button" disabled>按钮</button><div> &lt- 被禁用的按钮</div>
+    </form>
+</body>
+</html>
