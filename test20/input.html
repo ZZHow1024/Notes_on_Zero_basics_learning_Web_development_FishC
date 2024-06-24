@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ZZHow,前端,HTML5,CSS3,Web开发">
+    <meta name="description" content="《零基础入门学习Web开发》案例">
+    <meta name="author" content="ZZHow">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <title>input元素之搜索框、颜色选择框、图像按钮、隐藏属性</title>
+</head>
+<body>
+    <!-- input 实现搜索框样式 -->
+    <h1>input 实现搜索框样式</h1>
+    <form action="search.php" method="post">
+        <label>百度一下，你就知道：<input type="search" name="search"></label>
+        <button type="submit">Search!</button>
+    </form>
+
+    <!-- input 实现颜色选择框 -->
+    <h1>input 实现颜色选择框</h1>
+    <form action="welcome.php" method="get">
+        <label>选择颜色：<input type="color" name="color"></label><br>
+        <!-- 隐藏 input 元素 -->
+        <label>隐藏的 input 元素：<input type="hidden" value="看不到我" name="hidden"></label><br>
+        <!-- 图像按钮 -->
+        <label>点击 ZZHow 徽标提交：<input type="image" src="../img/favicon.ico" alt="ZZHow"></label>
+    </form>
+</body>
+</html>
