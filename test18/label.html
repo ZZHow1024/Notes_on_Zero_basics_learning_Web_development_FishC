@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ZZHow,前端,HTML5,CSS3,Web开发">
+    <meta name="description" content="《零基础入门学习Web开发》案例">
+    <meta name="author" content="ZZHow">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <title>label、fieldset、legend、select、option和optgroup元素</title>
+    <style>
+        label.select {
+            display: inline-block;
+            width: 70px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 使用 label 将文本包裹起来 -->
+    <h1>使用 label 将文本包裹起来</h1>
+    <form>
+        <label>姓名：<input type="text" name="name"></label><br><br>
+        <label>年龄：<input type="number" name="name"></label><br><br>
+        <button type="button">Submit</button>
+    </form><br><br>
+
+    <!-- 使用 label 关联元素 -->
+    <h1>使用 label 关联元素</h1>
+    <form>
+        <label for="name">姓名：</label><label><input type="text" name="name" id="name"></label><br><br>
+        <label for="age">年龄：<input type="number" name="name" id="age"></label><br><br>
+        <button type="button">Submit</button>
+    </form>
+
+    <!-- 使用 fieldset 划分不同类型的表单元素 -->
+    <h1>使用 fieldset 划分不同类型的表单元素</h1>
+    <form>
+        <h3>XX调查问卷</h3>
+        <fieldset>
+            <!-- 使用 legend 元素为 fieldset 定义说明文字 -->
+            <legend>基本信息</legend>
+            <label>姓名：<input type="text" name="name"></label><br><br>
+            <!-- 使用 select 和 option 元素制作下拉选项框 -->
+            <label>性别：
+                <select name="gender">
+                    <option value="man">男</option>
+                    <option value="female">女</option>
+                    <option value="other">其他</option>
+                </select>
+            </label><br><br>
+        </fieldset>
+        <fieldset>
+            <!-- 使用 legend 元素为 fieldset 定义说明文字 -->
+            <legend>调查内容</legend>
+            <label>您学习过 C 语言吗：<br><label class="select">是<input type="radio" name="C" value="yes"></label><label class="select">否<input type="radio" name="C" value="no"></label></label><br><br>
+            <label>您学习过 Java 语言吗：<br><label class="select">是<input type="radio" name="Java" value="yes"></label><label class="select">否<input type="radio" name="Java" value="no"></label></label><br><br>
+        </fieldset>
+    </form>
+
+    <!-- 使用 optgroup 元素对选线进行分组 -->
+    <h1>使用 optgroup 元素对选线进行分组</h1>
+    <form>
+        <label>选专业：
+            <select name="major">
+                <optgroup label="计算机类">
+                    <option value="计算机科学与技术">计算机科学与技术</option>
+                    <option value="软件工程">软件工程</option>
+                    <option value="网络工程" selected>网络工程</option>
+                </optgroup>
+                <optgroup label="电子信息类">
+                    <option value="电子信息工程">电子信息工程</option>
+                    <option value="电子科学与技术">电子科学与技术</option>
+                    <option value="通信工程">通信工程</option>
+                </optgroup>
+            </select>
+        </label>
+    </form>
+</body>
+</html>
