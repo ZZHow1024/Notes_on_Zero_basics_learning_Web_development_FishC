@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ZZHow,前端,HTML5,CSS3,Web开发">
+    <meta name="description" content="《零基础入门学习Web开发》案例">
+    <meta name="author" content="ZZHow">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <title>input元素之上传文件属性</title>
+</head>
+<body>
+    <!-- input 实现文件上传 -->
+    <h1>input 实现文件上传</h1>
+    <form action="uploadFile.php" method="post" enctype="multipart/form-data">
+        <!-- 限制上传文件的大小 -->
+        <input type="hidden" name="MAX_FILE_SIZE" value="51200"> <!-- 50 KB -->
+        <!-- 限制上传文件的类型 -->
+        <label>请选择您要上传的图片：<input type="file" name="file" accept="image/*"></label><br><br>
+        <button type="submit">上传文件</button>
+    </form><br><br>
+
+    <!-- 可选择多个文件 -->
+    <h1>可选择多个文件</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="hidden" name="MAX_FILE_SIZE" value="1024">
+        <label>可上传多个图片：<input type="file" name="file" accept="image/*" multiple></label><br><br>
+        <button type="submit" disabled><del>上传多个文件</del></button>
+    </form>
+</body>
+</html>
